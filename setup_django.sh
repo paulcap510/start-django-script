@@ -1,5 +1,13 @@
 #!/bin/bash
 
+# Ensure Django installation
+if ! python -c "import django" &> /dev/null; then
+    echo "Django is not installed. Installing Django..."
+    pip install django
+else
+    echo "Django is already installed."
+fi
+
 # Step 1: Prompts user to add their project names and app name
 echo "Enter the Django project name:"
 read project_name

@@ -12,11 +12,35 @@ This repository contains a simple Bash script to automate the setup of Django pr
 
 ## Usage
 
-1. **Clone the Repository**:
+1. **Clone the Repository and Setup**:
+
    ```bash
    git clone https://github.com/paulcapo510/start-django-script.git
    cd start-django-script
    ```
+
+   It is also recommended to create and activate a virtual environment before running the script to make sure your dependencies are isolated.
+
+   To create a virtual environment run:
+
+   ```
+   python3 -m venv venv
+   ```
+
+   To activate the environment on macOS or Linux run:
+
+   ```
+   source venv/bin/activate
+   ```
+
+   And for Windows use:
+
+   ```
+   .\venv\Scripts\activate
+   ```
+
+   Lastly, be sure to install Django with
+
 2. **Make script Executable**:
    To make your script executable, run the following command:
 
