@@ -17,3 +17,25 @@ This repository contains a simple Bash script to automate the setup of Django pr
    git clone https://github.com/paulcapo510/start-django-script.git
    cd start-django-script
    ```
+2. **Make script Executable**:
+   To make your script executable, run the following command:
+
+   ```
+   chmod +x setup_django.sh
+
+   ```
+
+3. **Run script**:
+   ```
+   ./setup_django.sh
+   ```
+
+## Notes
+
+- The script is designed to simplify the initial setup of Django projects and is particularly useful for developers who frequently start new Django projects.
+- The script has been tested on systems running Bash. If you're using a different shell, you may need to make adjustments.
+- Feel free to customize the script to better suit your workflow.
+
+## Contributing
+
+Want to contribute to this script? If you have suggestions for improvements or additional features, please feel free to submit a pull request or open an issue. Otherwise, please reach out to me directly at [paulcapob@gmail.com.com](mailto:paulcapob@gmail.com)].
