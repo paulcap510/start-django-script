@@ -47,4 +47,17 @@ def index(request):
     return HttpResponse("Hello World")
 EOL
 
+# Step 6: Use a temporary file to edit settings.py
+settings_file="$project_name/settings.py"
+temp_file=$(mktemp)
+
+awk -v app_name="'$app_name'," '
+/INSTALLED_APPS = \[/ {
+    print
+    print "    " app_name
+    next
+}
+{ print }
+' $settings_file > $temp_file && mv $temp_file $settings_file
+
 echo "Django project setup complete"
