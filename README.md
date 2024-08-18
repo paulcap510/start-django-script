@@ -15,7 +15,7 @@ This repository contains a simple Bash script to automate the setup of Django pr
 1. **Clone the Repository and Setup**:
 
    ```bash
-   git clone https://github.com/paulcapo510/start-django-script.git
+   git clone https://github.com/paulcap510/start-django-script.git
    cd start-django-script
    ```
 
