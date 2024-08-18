@@ -1,4 +1,4 @@
-# BASH SCRIPT TO AUTOMATE DJANGO PROJECTS
+# BASH SCRIPT TO AUTOMATE DJANGO PROJECT SETUP
 
 This is a simple Bash script to automate Django project set ups. I found it time consuming to set up new projects and configure the basic file structure, so this script will automate this.
 
