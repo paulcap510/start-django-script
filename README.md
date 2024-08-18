@@ -6,10 +6,8 @@ First, the user is prompted to input the name of their project as they would in 
 
 Second, the user is prompted to input the name of their first app as they would in the `python manage.py startapp` command.
 
-With this, the basic directories will be set up with the necessary code imported to the `urls.py` files in both diretores. The Bash script also creates a simple index view that returns an HttpRespose 'Hello World',
+With this, the basic directories will be set up with the necessary code imported to the `urls.py` files in both diretores. The Bash script also creates a simple index view that returns an HttpRespose 'Hello World'.
+
+As per Step 6 in the script, the app you create should be added to the projects `settings.py` file.
 
 After this, users can proceed with their Django project as they wish.
-
-### Important Note
-
-Right now, the script does NOT add the created app to the `settings.py` file. Please do this manually. Future versions of the script will automate this. 
