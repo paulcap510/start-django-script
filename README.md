@@ -1,13 +1,19 @@
-# BASH SCRIPT TO AUTOMATE DJANGO PROJECT SETUP
+# Django Project Setup Automation Script
 
-This is a simple Bash script to automate Django project set ups. I found it time consuming to set up new projects and configure the basic file structure, so this script will automate this.
+This repository contains a simple Bash script to automate the setup of Django projects. The script streamlines the process of creating a new Django project, adding an initial app, and configuring basic file structures.
 
-First, the user is prompted to input the name of their project as they would in the `django-admin startproject` command.
+## Features
 
-Second, the user is prompted to input the name of their first app as they would in the `python manage.py startapp` command.
+- **Automated Project Creation**: The script prompts you to input a name for your Django project, then runs `django-admin startproject` to create the project.
+- **Automated App Creation**: After the project is created, the script prompts you to input a name for your first app, then runs `python manage.py startapp` to create the app.
+- **URL Configuration**: The script automatically sets up the `urls.py` files in both the project and app directories, including importing the necessary modules and creating URL patterns.
+- **Simple Index View**: A basic `index` view is created within the app that returns an `HttpResponse` with the text "Hello World".
+- **Settings Configuration**: The script attempts to automatically add your new app to the `INSTALLED_APPS` list in the `settings.py` file, ensuring that the app is ready to use immediately.
 
-With this, the basic directories will be set up with the necessary code imported to the `urls.py` files in both diretores. The Bash script also creates a simple index view that returns an HttpRespose 'Hello World'.
+## Usage
 
-As per Step 6 in the script, the app you create should be added to the projects `settings.py` file.
-
-After this, users can proceed with their Django project as they wish.
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/paulcapo510/start-django-script.git
+   cd start-django-script
+   ```
